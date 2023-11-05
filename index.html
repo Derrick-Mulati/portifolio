@@ -163,8 +163,8 @@
               <div class="service-content">
                 <h2 class="s-title">Web Design</h2>
                 <p class="s-description text-center">
-                 Nowadays a website is a must have for any business and also startups. I create the most refined websites which is custom 
-                 tailored to suit your needs
+                 I design and develop beautiful and responsive websites that are optimized
+                  for search engines and provide a great user experience.
                 </p>
               </div>
             </div>
@@ -177,8 +177,8 @@
               <div class="service-content">
                 <h2 class="s-title">Graphic Design</h2>
                 <p class="s-description text-center">
-                  Captivating and eye catching graphic design is my speciality. Make your brand stand out by allowing me design a well crafed 
-                  graphics to suit you
+                  I design and develop a range of marketing materials, such as brochures, flyers, posters, and business cards,
+                   that are visually stunning and communicate a clear message to the target audience.
                 </p>
               </div>
             </div>
@@ -191,9 +191,8 @@
               <div class="service-content">
                 <h2 class="s-title">Data Science</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  Data is the new fuel not only for the future but also for the present.
+                  My  Data science skills help me generate insight  from data into more meaningful information
                 </p>
               </div>
             </div>
@@ -206,9 +205,8 @@
               <div class="service-content">
                 <h2 class="s-title">Responsive Design</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  I create user-friendly interfaces and experiences for digital products and platforms, 
+                  such as web applications and mobile apps
                 </p>
               </div>
             </div>
@@ -233,11 +231,10 @@
                 <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">Branding</h2>
+                <h2 class="s-title">Branding & Identity</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  I help businesses build a strong brand identity by creating unique logos, typography, 
+                  color palettes, and visual styles that align with their values and goals.
                 </p>
               </div>
             </div>
@@ -523,7 +520,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="#" id="myForm">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -555,6 +552,33 @@
                           </div>
                         </div>
                       </form>
+
+                      <script>
+                        document.getElementById("myForm").addEventListener("submit", function(event) {
+                          event.preventDefault(); // Prevent form submission
+                      
+                          // Get the values from the input fields and textarea
+                          var fullName = document.getElementById("full-name").value;
+                          var emailAddress = document.getElementById("email-address").value;
+                          var mobileNumber = document.getElementById("mobile-number").value;
+                          var subject = document.getElementById("subject").value;
+                          var message = document.getElementById("message").value;
+                      
+                          // Construct the WhatsApp URL with the captured information
+                          var waUrl = "https://wa.me/+254797782828?text=" +
+                            "Full%20Name: " + encodeURIComponent(fullName) +
+                            "%0AEmail%20Address: " + encodeURIComponent(emailAddress) +
+                            "%0AMobile%20Number: " + encodeURIComponent(mobileNumber) +
+                            "%0ASubject: " + encodeURIComponent(subject) +
+                            "%0AMessage: " + encodeURIComponent(message);
+                      
+                          // Open WhatsApp in a new window or tab
+                          window.open(waUrl);
+                      
+                          // Optionally, you can reset the form fields after submission
+                          document.getElementById("myForm").reset();
+                        });
+                      </script>
                     </div>
                   </div>
                   <div class="col-md-6">
