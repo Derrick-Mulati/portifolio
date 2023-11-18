@@ -18,6 +18,12 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
+.btn-center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 a:hover {
   color: #0078ff;
   text-decoration: none;
@@ -1334,6 +1340,8 @@ a:hover {
   display: inline-block;
   
 }
+
+
 
 /*--------------------------------------------------------------
 # Blog Single
