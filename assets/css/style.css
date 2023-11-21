@@ -590,7 +590,7 @@ a:hover {
   bottom: -6px;
   left: 0;
   width: 0;
-  background-color: #fff;
+  background-color: #0078ff;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
