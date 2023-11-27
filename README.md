@@ -1,4 +1,4 @@
 # Portifolio
 
-This is my digital portfolio
+This is my portfolio
 
